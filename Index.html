@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaFood — Delivery inteligente</title>
+    <meta name="description" content="NovaFood — comida, mercado e muito mais na sua porta.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">N</span>
+                <span>Nova<span>Food</span></span>
+            </a>
+
+            <div class="location">
+                <span class="location-icon">📍</span>
+                <div>
+                    <small>Entregar em</small>
+                    <strong>Escolher endereço</strong>
+                </div>
+                <span>⌄</span>
+            </div>
+
+            <div class="header-actions">
+                <button class="icon-button" id="searchButton" aria-label="Pesquisar">
+                    🔎
+                </button>
+
+                <button class="icon-button" id="userButton" aria-label="Minha conta">
+                    👤
+                </button>
+
+                <button class="cart-button" id="cartButton">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="badge">🚀 Delivery inteligente</span>
+
+                    <h1>
+                        Seu pedido.
+                        <span>Do seu jeito.</span>
+                    </h1>
+
+                    <p>
+                        Comida, mercado, farmácia e muito mais.
+                        Encontre tudo o que precisa em um só lugar.
+                    </p>
+
+                    <div class="search-box">
+                        <span>🔎</span>
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="O que você quer pedir hoje?"
+                        >
+                        <button id="searchSubmit">Buscar</button>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <span>⚡</span>
+                        <strong>Entrega rápida</strong>
+                    </div>
+
+                    <div class="delivery-animation">
+                        🛵
+                    </div>
+
+                    <p>Receba seu pedido sem complicação.</p>
+
+                    <div class="delivery-info">
+                        <span>📍 2,4 km</span>
+                        <span>⏱️ 25 min</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-label">EXPLORE</span>
+                        <h2>O que você procura?</h2>
+                    </div>
+                </div>
+
+                <div class="categories" id="categories">
+
+                    <button class="category active" data-category="Todos">
+                        <span>✨</span>
+                        <strong>Todos</strong>
+                    </button>
+
+                    <button class="category" data-category="Hambúrguer">
+                        <span>🍔</span>
+                        <strong>Hambúrguer</strong>
+                    </button>
+
+                    <button class="category" data-category="Pizza">
+                        <span>🍕</span>
+                        <strong>Pizza</strong>
+                    </button>
+
+                    <button class="category" data-category="Japonesa">
+                        <span>🍣</span>
+                        <strong>Japonesa</strong>
+                    </button>
+
+                    <button class="category" data-category="Brasileira">
+                        <span>🍛</span>
+                        <strong>Brasileira</strong>
+                    </button>
+
+                    <button class="category" data-category="Mercado">
+                        <span>🛒</span>
+                        <strong>Mercado</strong>
+                    </button>
+
+                    <button class="category" data-category="Farmácia">
+                        <span>💊</span>
+                        <strong>Farmácia</strong>
+                    </button>
+
+                    <button class="category" data-category="Bebidas">
+                        <span>🥤</span>
+                        <strong>Bebidas</strong>
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- OFERTAS -->
+        <section class="section offers-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-label">OFERTAS</span>
+                        <h2>Promoções para você</h2>
+                    </div>
+
+                    <button class="see-all">Ver todas →</button>
+                </div>
+
+                <div class="offers">
+
+                    <article class="offer-card offer-one">
+                        <div>
+                            <span class="offer-tag">ATÉ 40% OFF</span>
+                            <h3>Seu hambúrguer favorito</h3>
+                            <p>Economize no seu próximo pedido.</p>
+                            <button>Ver ofertas</button>
+                        </div>
+
+                        <span class="offer-emoji">🍔</span>
+                    </article>
+
+                    <article class="offer-card offer-two">
+                        <div>
+                            <span class="offer-tag">FRETE GRÁTIS</span>
+                            <h3>Peça sua pizza</h3>
+                            <p>Entrega grátis em restaurantes selecionados.</p>
+                            <button>Ver ofertas</button>
+                        </div>
+
+                        <span class="offer-emoji">🍕</span>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- RESTAURANTES -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-label">PERTO DE VOCÊ</span>
+                        <h2>Restaurantes populares</h2>
+                    </div>
+
+                    <button class="see-all">Ver todos →</button>
+                </div>
+
+                <div class="restaurant-grid" id="restaurantGrid"></div>
+
+            </div>
+        </section>
+
+
+        <!-- BENEFÍCIOS -->
+        <section class="benefits-section">
+            <div class="container">
+
+                <div class="benefit">
+                    <span>⚡</span>
+                    <div>
+                        <strong>Entrega rápida</strong>
+                        <p>Acompanhe seu pedido em tempo real.</p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <span>🔒</span>
+                    <div>
+                        <strong>Pagamento seguro</strong>
+                        <p>Seus dados ficam protegidos.</p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <span>⭐</span>
+                    <div>
+                        <strong>Melhores avaliações</strong>
+                        <p>Escolha estabelecimentos bem avaliados.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- CARRINHO -->
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+            <div>
+                <span class="section-label">SEU PEDIDO</span>
+                <h2>Carrinho</h2>
+            </div>
+
+            <button class="close-button" id="closeCart">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <span>🛒</span>
+                <h3>Seu carrinho está vazio</h3>
+                <p>Adicione produtos para começar seu pedido.</p>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="price-line">
+                <span>Subtotal</span>
+                <strong id="subtotal">R$ 0,00</strong>
+            </div>
+
+            <div class="price-line">
+                <span>Taxa de entrega</span>
+                <strong id="deliveryFee">R$ 0,00</strong>
+            </div>
+
+            <div class="price-total">
+                <span>Total</span>
+                <strong id="total">R$ 0,00</strong>
+            </div>
+
+            <button class="checkout-button" id="checkoutButton">
+                Continuar para pagamento
+            </button>
+
+        </div>
+
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <!-- CHECKOUT -->
+    <div class="modal" id="checkoutModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeCheckout">×</button>
+
+            <div class="modal-icon">💳</div>
+
+            <span class="section-label">CHECKOUT</span>
+            <h2>Finalizar pedido</h2>
+
+            <p class="modal-description">
+                Escolha uma forma de pagamento para continuar.
+            </p>
+
+            <div class="payment-options">
+
+                <button class="payment-option active">
+                    <span>💠</span>
+                    <div>
+                        <strong>PIX</strong>
+                        <small>Pagamento instantâneo</small>
+                    </div>
+                    <span>✓</span>
+                </button>
+
+                <button class="payment-option">
+                    <span>💳</span>
+                    <div>
+                        <strong>Cartão</strong>
+                        <small>Crédito ou débito</small>
+                    </div>
+                </button>
+
+                <button class="payment-option">
+                    <span>💵</span>
+                    <div>
+                        <strong>Dinheiro</strong>
+                        <small>Pague na entrega</small>
+                    </div>
+                </button>
+
+            </div>
+
+            <button class="confirm-button" id="confirmOrder">
+                Confirmar pedido
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LOGIN -->
+    <div class="modal" id="loginModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeLogin">×</button>
+
+            <div class="modal-icon">👋</div>
+
+            <span class="section-label">NOVAFOOD</span>
+            <h2>Bem-vindo!</h2>
+
+            <p class="modal-description">
+                Entre na sua conta para acompanhar seus pedidos.
+            </p>
+
+            <input class="form-input" type="email" placeholder="Seu e-mail">
+
+            <input class="form-input" type="password" placeholder="Sua senha">
+
+            <button class="confirm-button">
+                Entrar
+            </button>
+
+            <p class="signup-text">
+                Ainda não possui uma conta?
+                <strong>Cadastre-se</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+        <span>✓</span>
+        <p>Produto adicionado ao carrinho!</p>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">N</span>
+                    <span>Nova<span>Food</span></span>
+                </a>
+
+                <p>
+                    Seu delivery inteligente.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Sobre nós</a>
+                <a href="#">Seja um parceiro</a>
+                <a href="#">Seja entregador</a>
+                <a href="#">Ajuda</a>
+                <a href="#">Termos</a>
+                <a href="#">Privacidade</a>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 NovaFood. Todos os direitos reservados.
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
